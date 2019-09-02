@@ -1,0 +1,37 @@
+.note {
+  .favorite {
+    @include icon;
+    color: rgb(255, 0, 0);
+  }
+  .noFavorite {
+    @include icon;
+  }
+  .remove {
+    @include icon;
+  }
+  .edit {
+    @include icon;
+    color: rgb(255, 255, 255);
+  }
+  .noEdit {
+    @include icon;
+  }
+  .detail {
+    @include icon;
+  }
+  .noteText1,
+  .noteText2 {
+    @include noteText;
+    text-transform: capitalize;
+  }
+  .noteContentEdit,
+  .locationEdit {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: solid 2px;
+    border-color: aliceblue;
+    @include noteText;
+    font-size: 1.5rem;
+  }
+
+}

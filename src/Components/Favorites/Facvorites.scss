@@ -1,0 +1,9 @@
+.favorites{
+    .title{
+        @include title
+    }
+    .noteContent{
+        @include noteText;
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,30 @@
+@mixin title {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: rgba(228, 228, 228, 0.911);
+}
+
+@mixin subtitle {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: rgba(228, 228, 228, 0.911);
+}
+
+@mixin noteText {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    color: rgba(228, 228, 228, 0.911);
+}
+
+@mixin icon {
+    color: rgb(180, 180, 180);
+    font-size: 2rem;
+    &:hover {
+      cursor: pointer;
+      font-size: 2.5rem;
+      color: rgb(0, 162, 255);
+    }
+}

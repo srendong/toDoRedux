@@ -1,0 +1,34 @@
+.notesContainer{
+  .subtitle {
+    @include subtitle;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .goFavorites {
+    @include icon;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  .notesHeader, .notesBody, .notesFooter {
+    background-color: rgba(0,0,0,.5);
+  
+  }
+  .notesHeader{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: white;
+  }
+  .notesBody{
+    margin-top: 20px;
+    padding: 2rem;
+    color: white;
+    
+  }
+  .notesFooter{
+    bottom: 0;
+    position: fixed;
+    left: 0 ;
+    width: 100%;
+  }
+}
+
