@@ -40,3 +40,16 @@ const reducer = (state = defaultState, { type, payload }) => {
 };
 
 export default reducer;
+
+
+//reducer siemprerecibe como parametros el estado y la accion
+// const reducer = (state, action}) => {
+//   switch (action.type) {
+
+//     case "xxxxx":
+//       return state.concat(action.payload);
+
+//   default:
+//     return state;
+
+// };
