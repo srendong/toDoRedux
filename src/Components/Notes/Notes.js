@@ -27,10 +27,8 @@ const Notes = props => {
 
   return (
     <div className="notesContainer container-fluid">
-      <h1 className="notesHeader">Notes</h1>
- 
+      <h1 className="notesHeader ">Take Note</h1>
       <Form />
-
       <Link to="/favorites">
         <p className="subtitle text-center">Go to Favorites </p>
       </Link>
