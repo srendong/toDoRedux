@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/toDoRedux/static/css/main.be68a827.chunk.css",
-    "main.js": "/toDoRedux/static/js/main.53d5a199.chunk.js",
-    "main.js.map": "/toDoRedux/static/js/main.53d5a199.chunk.js.map",
+    "main.css": "/toDoRedux/static/css/main.41a9f108.chunk.css",
+    "main.js": "/toDoRedux/static/js/main.fcb5247c.chunk.js",
+    "main.js.map": "/toDoRedux/static/js/main.fcb5247c.chunk.js.map",
     "runtime~main.js": "/toDoRedux/static/js/runtime~main.40fa53e3.js",
     "runtime~main.js.map": "/toDoRedux/static/js/runtime~main.40fa53e3.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/toDoRedux/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.b3aa490a.chunk.js": "/toDoRedux/static/js/2.b3aa490a.chunk.js",
-    "static/js/2.b3aa490a.chunk.js.map": "/toDoRedux/static/js/2.b3aa490a.chunk.js.map",
+    "static/js/2.1bb7bd19.chunk.js": "/toDoRedux/static/js/2.1bb7bd19.chunk.js",
+    "static/js/2.1bb7bd19.chunk.js.map": "/toDoRedux/static/js/2.1bb7bd19.chunk.js.map",
     "index.html": "/toDoRedux/index.html",
-    "precache-manifest.5f8815ce27f9a8a9001373490b5eec76.js": "/toDoRedux/precache-manifest.5f8815ce27f9a8a9001373490b5eec76.js",
+    "precache-manifest.17a515390df9741c84232f27b4455efd.js": "/toDoRedux/precache-manifest.17a515390df9741c84232f27b4455efd.js",
     "service-worker.js": "/toDoRedux/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/toDoRedux/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.be68a827.chunk.css.map": "/toDoRedux/static/css/main.be68a827.chunk.css.map"
+    "static/css/main.41a9f108.chunk.css.map": "/toDoRedux/static/css/main.41a9f108.chunk.css.map"
   }
 }
