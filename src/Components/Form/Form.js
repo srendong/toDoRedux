@@ -41,28 +41,38 @@ class Form extends Component {
 
   render() {
     return (
-      <div className=" container-fluid  form ">
-        <div className="row justify-content-center  ">
-          <form className="" onSubmit={this.handleSubmit}>
-            <input
-              className="noteContent m-3 p-1"
-              type="text"
-              name="noteContent"
-              placeholder="write your note"
-              value={this.state.noteContent}
-              onChange={this.HandleChange}
-            />
-            <input
-              className="location m-3 p-1"
-              type="text"
-              name="location"
-              placeholder="location"
-              value={this.state.location}
-              onChange={this.HandleChange}
-            />
-            <button type="submit" className="done ">
-              <i className="material-icons chulo ">done</i>
-            </button>
+      <div className="form container ">
+        <div className="d-flex justify-content-center  ">
+          <form className="container " onSubmit={this.handleSubmit}>
+            <div className="row justify-content-center">
+              <div className="col-12 row justify-content-center">
+                <div className="col p-1 d-flex justify-content-center">
+                  <input
+                    className="noteContent text-center"
+                    type="text"
+                    name="noteContent"
+                    placeholder="write your note"
+                    value={this.state.noteContent}
+                    onChange={this.HandleChange}
+                  />
+                </div>
+                <div className="col p-1 d-flex justify-content-center">
+                  <input
+                    className="location text-center"
+                    type="text"
+                    name="location"
+                    placeholder="location"
+                    value={this.state.location}
+                    onChange={this.HandleChange}
+                  />
+                </div>
+              </div>
+              <div className="col-8 text-center">
+                <button type="submit" className="btn done p-2 my-2">
+                  Create
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </div>

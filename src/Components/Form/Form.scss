@@ -1,18 +1,19 @@
-.form{
-    .noteContent, .location{
-        background-color: rgba(255, 255, 255, 0);
-        border: none;   
-        border-bottom: solid 2px ;
-        border-color: aliceblue;
-        @include noteText
-
-    }
-    .done{
-        background-color: rgba(255, 255, 255, 0);
-        border: none;   
-    }
-    .chulo{
-        @include icon;
-        font-size: 1.5rem;
-    }
+.form {
+  .noteContent,
+  .location {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: solid 2px;
+    border-color: aliceblue;
+    @include noteText;
+  }
+  .done {
+    background-color: rgb(134, 134, 134);
+    color: white;
+    border: none;
+  }
+  .chulo {
+    @include icon;
+    font-size: 1.5rem;
+  }
 }

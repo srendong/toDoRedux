@@ -1,47 +1,51 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Note = props => {
   //classNames
-  const favorite = "material-icons col-2 favorite mr-3";
-  const noFavorite = "material-icons col-2 noFavorite mr-3";
-  const edit = "material-icons col-2 edit mr-3";
-  const noEdit = "material-icons col-2 noEdit mr-3";
-  const remove = "material-icons col-2 remove";
-  const detail = "material-icons col-2 detail"
-  
+  const favorite = "material-icons col text-center  favorite ";
+  const noFavorite = "material-icons col text-center  noFavorite ";
+  const edit = "material-icons col text-center   edit ";
+  const noEdit = "material-icons col text-center  noEdit ";
+  const remove = "material-icons col text-center  remove";
 
   return (
-    <div className="note row container  d-flex justify-content-between mb-3 mt-2 align-items-center">
+    <div className="note  row  justify-content-center mb-3 mt-2 align-items-center">
       {props.note.editMode ? (
-        <div className="col-8 ">
-          <p>
+        <div className="col-12 col-md row justify-content-center align-items-center p-2">
+          <div className="col-12 text-center">
             <input
-              className="inputChange noteContentEdit mr-3"
+              className="inputChange noteContentEdit"
               type="text"
               name="noteContent"
               value={props.note.noteContent}
               onChange={props.handlerChange}
             />
-            en
+          </div>
+          <div className="col text-center my-2">en</div>
+          <div className="col-12 text-center">
             <input
-              className="inputChange locationEdit ml-3"
+              className="inputChange locationEdit"
               type="text"
               name="location"
               value={props.note.location}
               onChange={props.handlerChange}
             />
-          </p>
+          </div>
         </div>
       ) : (
-        <div className="col-8 ">
-          <p className="">
-            <span className="noteText1 mr-3">{props.note.noteContent}</span>en
-            <span className="noteText2 ml-3">{props.note.location}</span>
-          </p>
+        <div className="col-12 col-md row justify-content-center align-items-center">
+          <div className="col-12 text-center">
+            <span className="noteText1 text-justify ">
+              {props.note.noteContent}
+            </span>
+          </div>
+          <div className="col text-center my-2">en</div>
+          <div className="col-12 text-center">
+            <span className="noteText2 text-center">{props.note.location}</span>
+          </div>
         </div>
       )}
-      <div className="col-4 ">
+      <div className="col-12 col-md d-flex my-1 ">
         <i
           className={props.note.favorite ? favorite : noFavorite}
           onClick={props.changeFavorites}
@@ -51,16 +55,15 @@ const Note = props => {
         <i className={remove} onClick={props.hanldeRemove}>
           delete
         </i>
-{props.note.editMode ? <i
-          className={edit}
-          onClick={props.changeEditMode}
-        > save </i>: <i
-          className={noEdit}
-          onClick={props.changeEditMode}
-        > edit </i>}
-        <Link to={`/details/${props.note.noteId}`}>
-          <i className={detail}>location_searching</i>
-        </Link>
+        {props.note.editMode ? (
+          <i className={edit} onClick={props.changeEditMode}>
+            save
+          </i>
+        ) : (
+          <i className={noEdit} onClick={props.changeEditMode}>
+            edit
+          </i>
+        )}
       </div>
     </div>
   );

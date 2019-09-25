@@ -1,9 +1,10 @@
 export const type = "ChangeText";
 
 const ChangeText = (id, e) => {
-  return { 
+  return {
     type,
-    payload: { id, e } };
+    payload: { id, e }
+  };
 };
 
 export default ChangeText;

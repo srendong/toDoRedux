@@ -1,9 +1,9 @@
-export const type= "RemoveNote"
+export const type = "RemoveNote";
 
 const RemoveNote = id => {
-    return {
-        type,
-        payload: id
-    }
-}
+  return {
+    type,
+    payload: id
+  };
+};
 export default RemoveNote;

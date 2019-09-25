@@ -1,10 +1,10 @@
-export const type = "AddNote"
+export const type = "AddNote";
 
-const AddNote = data =>{
-    return {
-        type,
-        payload: data
-    }
-}
+const AddNote = data => {
+  return {
+    type,
+    payload: data
+  };
+};
 
 export default AddNote;

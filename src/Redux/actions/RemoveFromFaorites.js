@@ -1,9 +1,9 @@
-export const type = "RemoveFromFavorites"
+export const type = "RemoveFromFavorites";
 
-const RemoveFromFavorites = id =>{
-    return {
-        type,
-        payload: id
-    }
-}
+const RemoveFromFavorites = id => {
+  return {
+    type,
+    payload: id
+  };
+};
 export default RemoveFromFavorites;

@@ -1,9 +1,27 @@
-.favorites{
-    .title{
-        @include title
-    }
-    .noteContent{
-        @include noteText;
-        text-transform: capitalize;
-    }
+.favorites {
+  .title {
+    @include title;
+  }
+  .noteContent {
+    @include noteText;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    
+  }
+  .home {
+    background: rgb(112, 112, 112);
+    border: solid 2px rgb(204, 255, 247);
+    font-weight: 700;
+    color: white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+  button{
+    background: none;
+    color: white;
+    border:none;
+}
 }
